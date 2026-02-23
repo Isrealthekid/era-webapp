@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "slug": "why-engineering-education-matters",
+    "title": "Why Engineering Education Matters More Than Ever in Africa",
+    "excerpt": "As Africa's tech ecosystem grows rapidly, the demand for skilled engineers has never been higher. Here's why investing in engineering education is crucial for the continent's future.",
+    "content": "## The African Tech Boom\n\nAfrica's technology sector is experiencing unprecedented growth. From Lagos to Nairobi, tech hubs are sprouting up, startups are raising record funding, and global companies are establishing African offices.\n\nBut this growth faces a critical bottleneck: **the skills gap**.\n\n## The Skills Gap Challenge\n\nWhile universities produce thousands of graduates each year, many lack the practical, industry-ready skills that employers demand. Traditional curricula often lag behind rapidly evolving technologies, leaving graduates unprepared for the modern workplace.\n\nThis is where specialised training academies like ERA play a vital role.\n\n## Bridging Theory and Practice\n\nAt ERA Academy, we believe education should be:\n\n- **Practical** — Every concept is reinforced with hands-on projects\n- **Current** — Our curriculum is updated quarterly to reflect industry trends\n- **Connected** — Students work with real companies through our internship programme\n\n## The Impact\n\nOur graduates consistently achieve a 95% employment rate within three months of completing their programme. This isn't just about getting any job — it's about launching meaningful careers in technology.\n\n## Looking Forward\n\nThe future of African engineering depends on the investments we make today in education and skills development. Every engineer we train is a step towards technological self-sufficiency for the continent.",
+    "category": "Education",
+    "author": "Dr. Amara Obi",
+    "authorAvatar": "/placeholder.svg",
+    "coverImage": "/placeholder.svg",
+    "date": "2026-01-15",
+    "tags": ["education", "engineering", "africa", "technology"],
+    "published": true
+  },
+  {
+    "id": 2,
+    "slug": "top-5-skills-employers-want",
+    "title": "Top 5 Technical Skills Employers Want in 2026",
+    "excerpt": "We surveyed 50+ partner companies to find out exactly which technical skills are most in demand this year. The results might surprise you.",
+    "content": "## What Employers Really Want\n\nWe surveyed over 50 of our partner companies across Nigeria and West Africa to understand their hiring priorities for 2026. Here are the top 5 technical skills they're looking for.\n\n## 1. Cloud Infrastructure & DevOps\n\nThe ability to deploy, manage, and scale applications on cloud platforms (AWS, GCP, Azure) tops the list. Companies want engineers who can set up CI/CD pipelines, manage containerised applications, and ensure system reliability.\n\n## 2. Full-Stack Web Development\n\nReact and Node.js remain the most requested stack, but employers increasingly value engineers who understand the full picture — from database design to frontend performance optimisation.\n\n## 3. Data Engineering & Analytics\n\nAs companies become more data-driven, the ability to build data pipelines, design data warehouses, and create meaningful analytics dashboards is highly valued.\n\n## 4. Cybersecurity Fundamentals\n\nWith increasing cyber threats, every developer is expected to understand security basics — from secure coding practices to understanding common vulnerabilities.\n\n## 5. AI/ML Integration\n\nWhile not every role requires deep ML expertise, the ability to integrate AI services and APIs into applications is becoming a baseline expectation.\n\n## How ERA Prepares You\n\nOur curriculum is designed in partnership with these same employers, ensuring every graduate has exposure to these critical skills.",
+    "category": "Career",
+    "author": "Engr. Kola Adeyemi",
+    "authorAvatar": "/placeholder.svg",
+    "coverImage": "/placeholder.svg",
+    "date": "2026-02-01",
+    "tags": ["career", "skills", "employers", "technology"],
+    "published": true
+  },
+  {
+    "id": 3,
+    "slug": "from-bootcamp-to-big-tech",
+    "title": "From Bootcamp to Big Tech: Adaeze's Journey",
+    "excerpt": "ERA Cohort 5 graduate Adaeze Okonkwo shares her inspiring journey from a non-technical background to landing a software engineering role at a leading tech company.",
+    "content": "## A Non-Traditional Path\n\nAdaeze Okonkwo never planned to be a software engineer. With a background in economics, she spent three years in banking before deciding to make a career change.\n\n> \"I was good with numbers and logic, but I'd never written a line of code in my life. The idea of becoming an engineer seemed impossible.\"\n\n## Taking the Leap\n\nAfter researching bootcamps and training programmes, Adaeze enrolled in ERA Academy's Cohort 5 Full-Stack Web Development programme.\n\n## The ERA Experience\n\nThe first two weeks were overwhelming. \"Everyone seemed to know more than me,\" she recalls. \"But the instructors were incredibly patient, and the cohort became like family.\"\n\nBy week 6, Adaeze was building her own projects. By week 10, she was helping other students debug their code.\n\n## The Internship\n\nThrough ERA's partner network, Adaeze secured an internship at TechCorp Nigeria. \"The internship was transformative. I went from writing code in a classroom to shipping features used by thousands of people.\"\n\n## Landing the Role\n\nThree months after graduating, Adaeze received a full-time offer as a Software Engineer. Today, she leads a team of four developers.\n\n## Her Advice\n\n\"Don't let your background define your future. If you're curious and willing to put in the work, a career in tech is absolutely within reach. ERA gave me the foundation, but the drive has to come from you.\"",
+    "category": "Success Stories",
+    "author": "ERA Editorial",
+    "authorAvatar": "/placeholder.svg",
+    "coverImage": "/placeholder.svg",
+    "date": "2026-02-10",
+    "tags": ["success-story", "career-change", "inspiration"],
+    "published": true
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "fullstack-web-dev",
+    "title": "Full-Stack Web Development",
+    "slug": "fullstack-web-dev",
+    "description": "Master modern web development from frontend to backend. Learn React, Node.js, databases, and deployment.",
+    "fullDetails": "This comprehensive 12-week programme covers everything you need to become a professional full-stack web developer. Starting with HTML, CSS, and JavaScript fundamentals, you'll progress through React for frontend development, Node.js and Express for backend APIs, PostgreSQL for database management, and finally cloud deployment with CI/CD pipelines.\n\nEach week includes hands-on projects that simulate real-world scenarios. By the end of the programme, you'll have a portfolio of 5+ production-ready projects and the skills to build any web application from scratch.",
+    "price": 150000,
+    "duration": "12 Weeks",
+    "mode": "hybrid",
+    "startDate": "2026-04-15",
+    "seats": 30,
+    "seatsAvailable": 12,
+    "instructor": "Dr. Amara Obi",
+    "flyer": "/placeholder.svg",
+    "syllabus": [
+      "HTML5, CSS3 & Responsive Design",
+      "JavaScript ES6+ & TypeScript",
+      "React & State Management",
+      "Node.js & Express APIs",
+      "PostgreSQL & Database Design",
+      "Authentication & Security",
+      "Cloud Deployment & DevOps",
+      "Capstone Project"
+    ],
+    "published": true
+  },
+  {
+    "id": "data-engineering",
+    "title": "Data Engineering Bootcamp",
+    "slug": "data-engineering",
+    "description": "Learn to build scalable data pipelines, work with big data tools, and master cloud data platforms.",
+    "fullDetails": "This intensive 10-week bootcamp is designed for aspiring data engineers who want to build the infrastructure that powers data-driven organisations. You'll learn Python for data processing, SQL for data querying, Apache Spark for big data, and cloud data services on AWS and GCP.\n\nThe programme emphasises real-world data engineering challenges including ETL pipeline design, data warehousing, stream processing, and data governance. Industry guest speakers share insights from their work at leading tech companies.",
+    "price": 120000,
+    "duration": "10 Weeks",
+    "mode": "online",
+    "startDate": "2026-05-01",
+    "seats": 50,
+    "seatsAvailable": 28,
+    "instructor": "Engr. Kola Adeyemi",
+    "flyer": "/placeholder.svg",
+    "syllabus": [
+      "Python for Data Engineering",
+      "Advanced SQL & Database Optimisation",
+      "Apache Spark & Big Data",
+      "ETL Pipeline Design",
+      "Cloud Data Platforms (AWS/GCP)",
+      "Stream Processing with Kafka",
+      "Data Warehousing & Modelling",
+      "Final Project & Presentation"
+    ],
+    "published": true
+  },
+  {
+    "id": "embedded-systems",
+    "title": "Embedded Systems & IoT",
+    "slug": "embedded-systems",
+    "description": "Dive into microcontrollers, sensor integration, and IoT platforms. Build real hardware projects.",
+    "fullDetails": "This 8-week hands-on programme covers embedded systems programming and IoT development. You'll work with Arduino and ESP32 microcontrollers, learn C/C++ for embedded systems, integrate various sensors and actuators, and build connected IoT solutions.\n\nAll participants receive a hardware kit including a microcontroller, sensors, breadboard, and components. The programme culminates in a group IoT project that solves a real-world problem in agriculture, health, or urban infrastructure.",
+    "price": 180000,
+    "duration": "8 Weeks",
+    "mode": "physical",
+    "startDate": "2026-06-10",
+    "seats": 20,
+    "seatsAvailable": 8,
+    "instructor": "Prof. Ngozi Ibe",
+    "flyer": "/placeholder.svg",
+    "syllabus": [
+      "Introduction to Embedded Systems",
+      "C/C++ for Microcontrollers",
+      "Arduino & ESP32 Development",
+      "Sensor Integration & Actuators",
+      "Communication Protocols (I2C, SPI, UART)",
+      "IoT Platforms & Cloud Connectivity",
+      "PCB Design Basics",
+      "Capstone IoT Project"
+    ],
+    "published": true
+  }
+]

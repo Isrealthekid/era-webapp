@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Instrument Serif"', 'serif'],
+        body: ['"DM Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        era: {
+          green: "hsl(var(--era-green))",
+          "green-light": "hsl(var(--era-green-light))",
+          "green-dark": "hsl(var(--era-green-dark))",
+          "gray-50": "hsl(var(--era-gray-50))",
+          "gray-100": "hsl(var(--era-gray-100))",
+          "gray-200": "hsl(var(--era-gray-200))",
+          "gray-300": "hsl(var(--era-gray-300))",
+          "gray-400": "hsl(var(--era-gray-400))",
+          "gray-500": "hsl(var(--era-gray-500))",
+          "gray-600": "hsl(var(--era-gray-600))",
+          "gray-700": "hsl(var(--era-gray-700))",
+          "gray-800": "hsl(var(--era-gray-800))",
+          "gray-900": "hsl(var(--era-gray-900))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +84,27 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "marquee": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "marquee": "marquee 30s linear infinite",
+        "float": "float 4s ease-in-out infinite",
       },
     },
   },
