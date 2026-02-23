@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "TechCorp Nigeria", "logo": "/placeholder.svg" },
+  { "id": 2, "name": "BuildAfrica", "logo": "/placeholder.svg" },
+  { "id": 3, "name": "GreenEnergy Ltd", "logo": "/placeholder.svg" },
+  { "id": 4, "name": "DataWave Systems", "logo": "/placeholder.svg" },
+  { "id": 5, "name": "CloudBase Africa", "logo": "/placeholder.svg" },
+  { "id": 6, "name": "InnovateLab", "logo": "/placeholder.svg" },
+  { "id": 7, "name": "Apex Engineering", "logo": "/placeholder.svg" },
+  { "id": 8, "name": "NovaTech Solutions", "logo": "/placeholder.svg" }
+]

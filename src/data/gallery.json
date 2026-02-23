@@ -1,0 +1,11 @@
+[
+  { "id": 1, "src": "/placeholder.svg", "alt": "ERA Academy training session", "category": "Training" },
+  { "id": 2, "src": "/placeholder.svg", "alt": "Students collaborating on project", "category": "Collaboration" },
+  { "id": 3, "src": "/placeholder.svg", "alt": "Graduation ceremony Cohort 5", "category": "Graduation" },
+  { "id": 4, "src": "/placeholder.svg", "alt": "Workshop on embedded systems", "category": "Workshop" },
+  { "id": 5, "src": "/placeholder.svg", "alt": "Hackathon event", "category": "Events" },
+  { "id": 6, "src": "/placeholder.svg", "alt": "Industry visit to TechCorp", "category": "Industry Visit" },
+  { "id": 7, "src": "/placeholder.svg", "alt": "Cohort 6 group photo", "category": "Graduation" },
+  { "id": 8, "src": "/placeholder.svg", "alt": "Coding bootcamp in progress", "category": "Training" },
+  { "id": 9, "src": "/placeholder.svg", "alt": "Guest speaker session", "category": "Events" }
+]

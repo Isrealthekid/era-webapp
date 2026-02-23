@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Adaeze Okonkwo",
+    "role": "Software Engineer at TechCorp",
+    "avatar": "/placeholder.svg",
+    "quote": "ERA Academy transformed my career. The hands-on training and mentorship gave me the skills and confidence to land my dream job within three months of graduating.",
+    "cohort": "Cohort 5"
+  },
+  {
+    "id": 2,
+    "name": "Emeka Nwosu",
+    "role": "DevOps Engineer at CloudBase",
+    "avatar": "/placeholder.svg",
+    "quote": "The curriculum is world-class. I went from knowing basic HTML to deploying full-stack applications on cloud infrastructure. The instructors genuinely care about your growth.",
+    "cohort": "Cohort 3"
+  },
+  {
+    "id": 3,
+    "name": "Fatima Bello",
+    "role": "Data Analyst at DataWave",
+    "avatar": "/placeholder.svg",
+    "quote": "What sets ERA apart is the community. Even after graduating, the alumni network has been invaluable for career advice, referrals, and continued learning.",
+    "cohort": "Cohort 4"
+  },
+  {
+    "id": 4,
+    "name": "Chinedu Eze",
+    "role": "Full-Stack Developer at InnovateLab",
+    "avatar": "/placeholder.svg",
+    "quote": "The internship placement programme connected me directly with industry partners. I was offered a full-time role before even finishing the programme.",
+    "cohort": "Cohort 6"
+  }
+]
