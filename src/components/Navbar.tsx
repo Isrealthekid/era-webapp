@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
+import eraLogo from "@/assets/era-logo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -30,11 +31,11 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-2 px-4">
       <motion.div
         layout
         className={cn(
-          "flex items-center justify-between rounded-full px-6 py-3 transition-colors duration-500",
+          "flex items-center justify-between rounded-full px-5 py-1.5 transition-colors duration-500",
           scrolled
             ? "glass shadow-xl"
             : "bg-background shadow-md border border-border"
@@ -42,8 +43,8 @@ const Navbar = () => {
         style={{ width: scrolled ? "65%" : "80%", minWidth: 320, maxWidth: 1200 }}
         transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
       >
-        <Link to="/" className="font-display text-2xl text-primary font-bold tracking-tight">
-          ERA
+        <Link to="/" className="shrink-0">
+          <img src={eraLogo} alt="ERA Academy" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}
@@ -53,7 +54,7 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               className={cn(
-                "px-3 py-2 text-sm font-medium rounded-full transition-colors",
+                "px-3 py-1.5 text-sm font-medium rounded-full transition-colors",
                 location.pathname === link.to
                   ? "text-primary bg-accent"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
@@ -62,10 +63,11 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-3 rounded-full">
-            <a href="mailto:info@era.com.ng?subject=Join%20Program">Join Program</a>
-          </Button>
         </div>
+
+        <Button asChild size="sm" className="hidden md:inline-flex rounded-full bg-lime text-era-gray-900 hover:bg-lime/90 font-semibold">
+          <a href="mailto:info@era.com.ng?subject=Join%20Program">Join Program</a>
+        </Button>
 
         {/* Mobile toggle */}
         <button
@@ -84,7 +86,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed top-20 left-4 right-4 z-50 glass rounded-2xl p-6 md:hidden"
+            className="fixed top-16 left-4 right-4 z-50 glass rounded-2xl p-6 md:hidden"
           >
             <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
@@ -101,7 +103,7 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Button asChild className="mt-2 rounded-full">
+              <Button asChild className="mt-2 rounded-full bg-lime text-era-gray-900 hover:bg-lime/90 font-semibold">
                 <a href="mailto:info@era.com.ng?subject=Join%20Program">Join Program</a>
               </Button>
             </div>

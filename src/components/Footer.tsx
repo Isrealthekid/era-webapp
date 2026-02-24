@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import eraLogo from "@/assets/era-logo.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <span className="font-display text-3xl text-primary">ERA</span>
-            <p className="mt-4 text-sm leading-relaxed">
-              Engineering Resources Academy — building great futures through proper guidance, technical training, and industry connections.
+            <img src={eraLogo} alt="ERA Academy" className="h-14 w-auto mb-4" />
+            <p className="mt-2 text-sm leading-relaxed">
+              Engineering Resources Academy — providing a platform dedicated to graduate training and employment opportunities for engineers in the building environment.
             </p>
           </div>
 
@@ -36,8 +37,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg text-white mb-4">Programs</h4>
             <ul className="space-y-2 text-sm">
-              <li>Technical Training</li>
-              <li>Soft Skills Development</li>
+              <li>Structural Engineering Training</li>
+              <li>Site Supervision & Management</li>
               <li>Internship Placement</li>
               <li>Career Mentorship</li>
             </ul>

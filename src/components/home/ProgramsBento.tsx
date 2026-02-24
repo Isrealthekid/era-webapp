@@ -1,24 +1,26 @@
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
-import { Code2, Users2, Briefcase } from "lucide-react";
+import technicalImg from "@/assets/technical-training.jpg";
+import softSkillsImg from "@/assets/soft-skills.jpg";
+import internshipImg from "@/assets/internship.jpg";
 
 const programs = [
   {
     title: "Technical Training",
-    description: "Master in-demand engineering skills with hands-on, project-based curricula taught by industry experts.",
-    icon: Code2,
+    description: "Hands-on training in structural detailing, setting out, concrete volume calculation, formwork design, and site supervision for civil and mechanical engineers.",
+    image: technicalImg,
     large: true,
   },
   {
     title: "Soft Skills Development",
-    description: "Communication, teamwork, and leadership training to complement your technical expertise.",
-    icon: Users2,
+    description: "Communication, project management, teamwork, and leadership skills essential for the building environment.",
+    image: softSkillsImg,
     large: false,
   },
   {
     title: "Internship Placement",
-    description: "Direct placement with our 20+ partner companies for real-world professional experience.",
-    icon: Briefcase,
+    description: "6-month placements with our 20+ partner construction and engineering firms for real-world site experience.",
+    image: internshipImg,
     large: false,
   },
 ];
@@ -37,17 +39,17 @@ const ProgramsBento = () => {
           {programs.map((prog, i) => (
             <motion.div
               key={prog.title}
-              className={`rounded-2xl bg-card border border-border p-8 hover-lift ${prog.large ? "md:row-span-2 flex flex-col justify-center" : ""}`}
+              className={`rounded-2xl overflow-hidden relative hover-lift ${prog.large ? "md:row-span-2" : ""}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                <prog.icon size={24} className="text-primary" />
+              <img src={prog.image} alt={prog.title} className="w-full h-full object-cover absolute inset-0" />
+              <div className="relative z-10 bg-gradient-to-t from-era-gray-900/90 via-era-gray-900/40 to-transparent p-8 flex flex-col justify-end min-h-[240px] h-full">
+                <h3 className="font-display text-2xl text-white mb-2">{prog.title}</h3>
+                <p className="text-white/80 text-sm">{prog.description}</p>
               </div>
-              <h3 className="font-display text-2xl text-foreground mb-2">{prog.title}</h3>
-              <p className="text-muted-foreground">{prog.description}</p>
             </motion.div>
           ))}
         </div>

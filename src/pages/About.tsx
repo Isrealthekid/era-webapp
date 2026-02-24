@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { Target, Eye, Heart, Users } from "lucide-react";
 
 const values = [
-  { icon: Target, title: "Mission", desc: "To bridge the gap between academic knowledge and industry-ready skills by providing world-class technical training and mentorship to aspiring engineers across Africa." },
-  { icon: Eye, title: "Vision", desc: "To become Africa's leading engineering academy, producing a generation of highly skilled, innovative, and employable engineers." },
-  { icon: Heart, title: "Values", desc: "Excellence, Integrity, Community, Innovation — these core values guide everything we do, from curriculum design to student support." },
-  { icon: Users, title: "Community", desc: "Our 500+ alumni network spans 20+ companies. Graduates support each other through mentorship, referrals, and knowledge sharing." },
+  { icon: Target, title: "Mission", desc: "To bridge the gap between academic knowledge and industry-ready skills by providing world-class technical training and site placement for civil and mechanical engineers in the building environment." },
+  { icon: Eye, title: "Vision", desc: "To become Nigeria's leading engineering resource academy, producing a generation of highly skilled, site-ready, and employable graduate engineers." },
+  { icon: Heart, title: "Values", desc: "Excellence, Integrity, Community, Innovation — these core values guide everything we do, from curriculum design to internship placements on real construction sites." },
+  { icon: Users, title: "Community", desc: "Our 500+ alumni network spans 20+ construction and engineering companies. Graduates support each other through mentorship, referrals, and knowledge sharing." },
 ];
 
 const team = [
-  { name: "Dr. Amara Obi", role: "Founder & Lead Instructor", bio: "15 years in software engineering, passionate about education reform in Africa." },
-  { name: "Engr. Kola Adeyemi", role: "Data Engineering Lead", bio: "Former senior engineer at a Fortune 500 company, now dedicated to training the next generation." },
-  { name: "Prof. Ngozi Ibe", role: "Embedded Systems Lead", bio: "PhD in Electrical Engineering, pioneer of IoT education in West Africa." },
+  { name: "Engr. Abiodun Adeyemi", role: "Founder & Lead Instructor", bio: "Structural engineer with over 15 years of experience in building construction and graduate training." },
+  { name: "Engr. Kola Adeyemi", role: "Civil Engineering Lead", bio: "Specialist in structural detailing, setting out, and site supervision with extensive industry experience." },
+  { name: "Engr. Ngozi Ibe", role: "Mechanical Systems Lead", bio: "Expert in building services engineering, HVAC systems, and plumbing design for commercial projects." },
 ];
 
 const About = () => {
@@ -23,8 +23,8 @@ const About = () => {
         <div className="container mx-auto px-4">
           <SectionHeading
             tag="About ERA"
-            title="Building Africa's engineering future"
-            subtitle="ERA Academy was founded with a single belief: that talent is evenly distributed, but opportunity is not."
+            title="Building Nigeria's engineering future"
+            subtitle="ERA Academy was founded with a single belief: that talent is evenly distributed, but opportunity is not. We provide graduate engineers with the platform to gain real site experience."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-20">

@@ -76,6 +76,7 @@ export default {
           "gray-800": "hsl(var(--era-gray-800))",
           "gray-900": "hsl(var(--era-gray-900))",
         },
+        lime: "hsl(var(--lime))",
       },
       borderRadius: {
         lg: "var(--radius)",
