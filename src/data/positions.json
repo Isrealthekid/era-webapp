@@ -1,0 +1,147 @@
+[
+  {
+    "id": "1",
+    "slug": "civil-engineer-site-supervision",
+    "title": "Civil Engineer – Site Supervision",
+    "department": "Civil Engineering",
+    "type": "Full-time",
+    "location": "Lagos, Nigeria",
+    "mode": "On-site",
+    "level": "Entry-level / Graduate",
+    "salary": "Competitive",
+    "postedDate": "2026-02-01",
+    "closingDate": "2026-04-30",
+    "published": true,
+    "summary": "We are seeking a motivated Civil Engineering graduate to join our site supervision team, supporting project engineers on active construction sites across Lagos.",
+    "responsibilities": [
+      "Assist in setting out and interpreting structural and architectural drawings",
+      "Calculate concrete volumes and estimate material requirements",
+      "Supervise daily site activities and enforce health & safety protocols",
+      "Maintain accurate site records, daily reports, and progress logs",
+      "Liaise with contractors, subcontractors, and project managers"
+    ],
+    "requirements": [
+      "B.Sc / B.Eng in Civil Engineering (minimum Second Class Lower)",
+      "0–2 years post-NYSC experience (fresh graduates encouraged to apply)",
+      "Basic proficiency in AutoCAD is an advantage",
+      "Strong written and verbal communication skills",
+      "Ability to work on-site in Lagos with physical stamina"
+    ],
+    "benefits": [
+      "Structured mentorship from senior engineers",
+      "Hands-on experience on high-value construction projects",
+      "ERA Certificate of Professional Development",
+      "Pathway to full-time placement with partner companies"
+    ],
+    "howToApply": "Send your CV and a one-page cover letter to info@era.com.ng with the subject line: Application – Civil Engineer Site Supervision"
+  },
+  {
+    "id": "2",
+    "slug": "mechanical-engineer-hvac-maintenance",
+    "title": "Mechanical Engineer – HVAC & Maintenance",
+    "department": "Mechanical Engineering",
+    "type": "Full-time",
+    "location": "Lagos, Nigeria",
+    "mode": "On-site",
+    "level": "Junior / 1–3 years experience",
+    "salary": "Competitive",
+    "postedDate": "2026-02-10",
+    "closingDate": "2026-04-30",
+    "published": true,
+    "summary": "ERA is looking for a mechanical engineering professional with experience or strong interest in HVAC systems, plumbing installations, and mechanical maintenance for commercial and residential projects.",
+    "responsibilities": [
+      "Design, install, and maintain HVAC and mechanical systems on project sites",
+      "Prepare technical reports and as-built documentation",
+      "Coordinate with civil and electrical teams on project integration",
+      "Troubleshoot mechanical failures and propose cost-effective solutions",
+      "Ensure all mechanical work complies with relevant Nigerian standards"
+    ],
+    "requirements": [
+      "B.Eng / B.Sc in Mechanical Engineering",
+      "1–3 years of relevant industry experience preferred",
+      "Familiarity with HVAC systems, pumps, and piping layouts",
+      "Proficiency in technical drawing interpretation",
+      "Good communication and teamwork skills"
+    ],
+    "benefits": [
+      "Exposure to diverse project types across residential and commercial sectors",
+      "Mentorship from experienced mechanical engineers",
+      "Competitive compensation package",
+      "Pathway to ERA partner company placement"
+    ],
+    "howToApply": "Send your CV to info@era.com.ng with subject: Application – Mechanical Engineer HVAC"
+  },
+  {
+    "id": "3",
+    "slug": "electrical-engineer-building-services",
+    "title": "Electrical Engineer – Building Services",
+    "department": "Electrical Engineering",
+    "type": "Full-time",
+    "location": "Lagos, Nigeria",
+    "mode": "Hybrid",
+    "level": "Entry-level / Graduate",
+    "salary": "Competitive",
+    "postedDate": "2026-02-15",
+    "closingDate": "2026-05-15",
+    "published": true,
+    "summary": "We are recruiting an Electrical Engineering graduate to support our building services team, focusing on electrical installation design, site supervision, and commissioning for ongoing construction projects.",
+    "responsibilities": [
+      "Prepare and review electrical drawings, single-line diagrams, and panel schedules",
+      "Supervise electrical installations including wiring, lighting, and power distribution",
+      "Conduct site inspections and ensure compliance with electrical codes and standards",
+      "Liaise with project managers and other engineering disciplines on-site",
+      "Assist in commissioning, testing, and handover of electrical systems"
+    ],
+    "requirements": [
+      "B.Eng / B.Sc in Electrical Engineering or Electrical & Electronics Engineering",
+      "0–2 years post-NYSC experience",
+      "Basic knowledge of AutoCAD Electrical or similar tools is an advantage",
+      "Understanding of Nigerian Electrical Code (NEC) and IET Wiring Regulations",
+      "Strong attention to detail and ability to work to project deadlines"
+    ],
+    "benefits": [
+      "On-the-job training on active construction projects",
+      "Mentorship from COREN-registered engineers",
+      "ERA Certificate of Completion",
+      "Direct pathway to employment with ERA partner companies"
+    ],
+    "howToApply": "Email info@era.com.ng with subject: Application – Electrical Engineer Building Services"
+  },
+  {
+    "id": "4",
+    "slug": "project-manager-building-construction",
+    "title": "Project Manager – Building & Construction",
+    "department": "Building Project Management",
+    "type": "Full-time",
+    "location": "Lagos, Nigeria",
+    "mode": "On-site",
+    "level": "Mid-level / 3–5 years experience",
+    "salary": "Competitive",
+    "postedDate": "2026-02-20",
+    "closingDate": "2026-05-31",
+    "published": true,
+    "summary": "ERA is seeking an experienced Project Manager to oversee building and construction projects from inception to completion, managing timelines, budgets, contractors, and client relationships.",
+    "responsibilities": [
+      "Lead end-to-end project delivery across residential and commercial construction projects",
+      "Develop and maintain project schedules, budgets, and risk registers",
+      "Manage relationships with clients, contractors, consultants, and statutory bodies",
+      "Conduct regular site visits and produce detailed progress reports",
+      "Ensure all projects meet quality, safety, and regulatory requirements",
+      "Mentor junior engineers and site staff"
+    ],
+    "requirements": [
+      "B.Sc / B.Eng in Civil, Structural, or Building Engineering (PMP or PRINCE2 certification is an advantage)",
+      "3–5 years of verifiable project management experience in building construction",
+      "Demonstrated ability to manage multiple concurrent projects",
+      "Proficiency in MS Project, Primavera, or similar scheduling tools",
+      "Strong leadership, negotiation, and stakeholder management skills"
+    ],
+    "benefits": [
+      "Leadership role on high-profile Lagos construction projects",
+      "Competitive salary and performance incentives",
+      "Opportunity to build a team and shape ERA's project delivery standards",
+      "Access to ERA's growing network of partner companies and clients"
+    ],
+    "howToApply": "Submit your CV and a portfolio of completed projects to info@era.com.ng with subject: Application – Project Manager Building"
+  }
+]

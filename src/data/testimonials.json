@@ -1,34 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Adaeze Okonkwo",
-    "role": "Software Engineer at TechCorp",
+    "name": "Tofunmi Adeyinka",
+    "role": "Site Engineer at Calebella Integritas Projects",
     "avatar": "/placeholder.svg",
-    "quote": "ERA Academy transformed my career. The hands-on training and mentorship gave me the skills and confidence to land my dream job within three months of graduating.",
-    "cohort": "Cohort 5"
-  },
-  {
-    "id": 2,
-    "name": "Emeka Nwosu",
-    "role": "DevOps Engineer at CloudBase",
-    "avatar": "/placeholder.svg",
-    "quote": "The curriculum is world-class. I went from knowing basic HTML to deploying full-stack applications on cloud infrastructure. The instructors genuinely care about your growth.",
+    "quote": "ERA didn't just teach me engineering — they taught me how to be a professional. The site experience, mentorship, and soft skills training all came together. I was placed within two months of completing the programme.",
     "cohort": "Cohort 3"
   },
   {
-    "id": 3,
-    "name": "Fatima Bello",
-    "role": "Data Analyst at DataWave",
+    "id": 2,
+    "name": "Hamzah Babatunde",
+    "role": "Project Coordinator at Black Diamond Engineering",
     "avatar": "/placeholder.svg",
-    "quote": "What sets ERA apart is the community. Even after graduating, the alumni network has been invaluable for career advice, referrals, and continued learning.",
+    "quote": "Before ERA, I could solve problems on paper but had never supervised a concrete pour. The hands-on training on active construction sites gave me confidence that no textbook ever could.",
     "cohort": "Cohort 4"
   },
   {
-    "id": 4,
-    "name": "Chinedu Eze",
-    "role": "Full-Stack Developer at InnovateLab",
+    "id": 3,
+    "name": "Wright Okonkwo",
+    "role": "Structural Engineer at HFP Engineering",
     "avatar": "/placeholder.svg",
-    "quote": "The internship placement programme connected me directly with industry partners. I was offered a full-time role before even finishing the programme.",
+    "quote": "The AutoCAD and structural drawing modules were exceptional. I went from struggling with basic commands to producing full structural detail drawings within four weeks. ERA's instructors are practising engineers — they teach what they do.",
+    "cohort": "Cohort 5"
+  },
+  {
+    "id": 4,
+    "name": "Adaeze Nwachukwu",
+    "role": "Graduate Engineer at Julius Berger Nigeria",
+    "avatar": "/placeholder.svg",
+    "quote": "What sets ERA apart is their industry connections. The internship placement connected me directly with a firm that matched my career goals. I was offered a full-time role before the programme even ended.",
+    "cohort": "Cohort 5"
+  },
+  {
+    "id": 5,
+    "name": "Emeka Okafor",
+    "role": "Site Supervisor at Craneburg Construction",
+    "avatar": "/placeholder.svg",
+    "quote": "As a mechanical engineering graduate pivoting into construction, ERA gave me the practical foundation I needed. The site supervision module and concrete works training were exactly what employers were looking for.",
     "cohort": "Cohort 6"
+  },
+  {
+    "id": 6,
+    "name": "Fatima Bello",
+    "role": "Quantity Surveyor at Dutum Construction",
+    "avatar": "/placeholder.svg",
+    "quote": "ERA's programme is intense but worth every naira. The quantity surveying and estimation skills I gained here are what I use every single day at work. The alumni network has also been invaluable for career growth.",
+    "cohort": "Cohort 4"
   }
 ]

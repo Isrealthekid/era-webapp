@@ -1,10 +1,14 @@
 [
-  { "id": 1, "name": "TechCorp Nigeria", "logo": "/placeholder.svg" },
-  { "id": 2, "name": "BuildAfrica", "logo": "/placeholder.svg" },
-  { "id": 3, "name": "GreenEnergy Ltd", "logo": "/placeholder.svg" },
-  { "id": 4, "name": "DataWave Systems", "logo": "/placeholder.svg" },
-  { "id": 5, "name": "CloudBase Africa", "logo": "/placeholder.svg" },
-  { "id": 6, "name": "InnovateLab", "logo": "/placeholder.svg" },
-  { "id": 7, "name": "Apex Engineering", "logo": "/placeholder.svg" },
-  { "id": 8, "name": "NovaTech Solutions", "logo": "/placeholder.svg" }
+  { "id": 1, "name": "Calebella Integritas Projects Ltd", "logo": "/placeholder.svg" },
+  { "id": 2, "name": "Black Diamond Engineering Limited", "logo": "/placeholder.svg" },
+  { "id": 3, "name": "El Fad", "logo": "/placeholder.svg" },
+  { "id": 4, "name": "MBS", "logo": "/placeholder.svg" },
+  { "id": 5, "name": "MW", "logo": "/placeholder.svg" },
+  { "id": 6, "name": "Julius Berger Nigeria", "logo": "/placeholder.svg" },
+  { "id": 7, "name": "Cappa & D'Alberto", "logo": "/placeholder.svg" },
+  { "id": 8, "name": "Reynolds Construction Company", "logo": "/placeholder.svg" },
+  { "id": 9, "name": "CCECC Nigeria", "logo": "/placeholder.svg" },
+  { "id": 10, "name": "HFP Engineering", "logo": "/placeholder.svg" },
+  { "id": 11, "name": "Craneburg Construction", "logo": "/placeholder.svg" },
+  { "id": 12, "name": "Dutum Construction", "logo": "/placeholder.svg" }
 ]

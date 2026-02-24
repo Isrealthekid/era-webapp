@@ -1,11 +1,14 @@
 [
-  { "id": 1, "src": "/placeholder.svg", "alt": "ERA Academy training session", "category": "Training" },
-  { "id": 2, "src": "/placeholder.svg", "alt": "Students collaborating on project", "category": "Collaboration" },
-  { "id": 3, "src": "/placeholder.svg", "alt": "Graduation ceremony Cohort 5", "category": "Graduation" },
-  { "id": 4, "src": "/placeholder.svg", "alt": "Workshop on embedded systems", "category": "Workshop" },
-  { "id": 5, "src": "/placeholder.svg", "alt": "Hackathon event", "category": "Events" },
-  { "id": 6, "src": "/placeholder.svg", "alt": "Industry visit to TechCorp", "category": "Industry Visit" },
-  { "id": 7, "src": "/placeholder.svg", "alt": "Cohort 6 group photo", "category": "Graduation" },
-  { "id": 8, "src": "/placeholder.svg", "alt": "Coding bootcamp in progress", "category": "Training" },
-  { "id": 9, "src": "/placeholder.svg", "alt": "Guest speaker session", "category": "Events" }
+  { "id": 1, "src": "/placeholder.svg", "alt": "ERA participants on active construction site visit", "category": "Site Visit" },
+  { "id": 2, "src": "/placeholder.svg", "alt": "AutoCAD training session in progress", "category": "Training" },
+  { "id": 3, "src": "/placeholder.svg", "alt": "Cohort 5 graduation ceremony at Oshopey Plaza", "category": "Graduation" },
+  { "id": 4, "src": "/placeholder.svg", "alt": "Students learning structural drawing interpretation", "category": "Training" },
+  { "id": 5, "src": "/placeholder.svg", "alt": "Concrete pour supervision exercise", "category": "Site Visit" },
+  { "id": 6, "src": "/placeholder.svg", "alt": "Soft skills workshop — presentation practice", "category": "Workshop" },
+  { "id": 7, "src": "/placeholder.svg", "alt": "Industry guest speaker from Black Diamond Engineering", "category": "Events" },
+  { "id": 8, "src": "/placeholder.svg", "alt": "Cohort 6 group photo", "category": "Graduation" },
+  { "id": 9, "src": "/placeholder.svg", "alt": "Setting out exercise on construction site", "category": "Site Visit" },
+  { "id": 10, "src": "/placeholder.svg", "alt": "ERA partner company networking event", "category": "Events" },
+  { "id": 11, "src": "/placeholder.svg", "alt": "Reinforcement checking and quality control practice", "category": "Training" },
+  { "id": 12, "src": "/placeholder.svg", "alt": "Cohort 4 participants with industry mentors", "category": "Workshop" }
 ]
