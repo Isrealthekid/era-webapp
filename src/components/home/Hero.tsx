@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Users, Briefcase, Building2, GraduationCap } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
   { icon: Users, value: "500+", label: "Engineers Trained" },
@@ -10,7 +11,7 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="py-12 md:py-20 lg:py-28">
+    <section className="py-10 md:py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left column */}
@@ -27,7 +28,7 @@ const Hero = () => {
               Great futures are built with proper guidance
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 font-body">
-              We equip aspiring engineers with world-class technical skills, soft skills, and direct connections to industry through our intensive training programmes.
+              An organisation dedicated to graduate training and employment opportunities for civil and mechanical engineers in the building environment.
             </p>
             <div className="flex flex-wrap gap-3 mb-10">
               <Button asChild size="lg" className="rounded-full px-8">
@@ -56,8 +57,8 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="aspect-[4/5] rounded-3xl bg-secondary overflow-hidden relative">
-              <img src="/placeholder.svg" alt="ERA Academy students" className="w-full h-full object-cover" />
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden relative">
+              <img src={heroBg} alt="ERA Academy engineers on site" className="w-full h-full object-cover" />
 
               {/* Floating stat card 1 */}
               <motion.div

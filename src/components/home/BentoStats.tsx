@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
 
 const stats = [
-  { icon: Users, value: "500+", label: "Engineers Trained", span: "col-span-2 md:col-span-1" },
-  { icon: TrendingUp, value: "95%", label: "Employment Rate", span: "col-span-2 md:col-span-1" },
-  { icon: Building2, value: "20+", label: "Partner Companies", span: "col-span-2 md:col-span-1" },
-  { icon: Clock, value: "6 Mo", label: "Intensive Program", span: "col-span-2 md:col-span-1" },
+  { icon: Users, value: "500+", label: "Engineers & Graduates Trained", span: "col-span-2 md:col-span-1" },
+  { icon: TrendingUp, value: "95%", label: "Find Employment Within 3 Months", span: "col-span-2 md:col-span-1" },
+  { icon: Building2, value: "20+", label: "Partner Construction Companies", span: "col-span-2 md:col-span-1" },
+  { icon: Clock, value: "6 Mo", label: "Intensive Training & Internship", span: "col-span-2 md:col-span-1" },
 ];
 
 const BentoStats = () => {
@@ -17,7 +17,7 @@ const BentoStats = () => {
         <SectionHeading
           tag="Our Impact"
           title="Numbers that speak for themselves"
-          subtitle="We measure our success by the success of our graduates."
+          subtitle="We measure our success by the success of our graduate engineers on real construction sites."
         />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
