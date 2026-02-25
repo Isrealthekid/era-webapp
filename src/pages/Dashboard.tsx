@@ -8,10 +8,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
-import { Image, FileText, GraduationCap, Upload, Trash2, Plus, X } from "lucide-react";
+import { Image, FileText, GraduationCap, Upload, Trash2, Briefcase } from "lucide-react";
 import trainings from "@/data/trainings.json";
 import blogs from "@/data/blogs.json";
 import gallery from "@/data/gallery.json";
+import positions from "@/data/positions.json";
 
 const CORRECT_PIN = "123456";
 
@@ -21,10 +22,10 @@ const Dashboard = () => {
   const [error, setError] = useState(false);
   const [shake, setShake] = useState(false);
 
-  // Local state copies for CMS
   const [localTrainings, setLocalTrainings] = useState(trainings);
   const [localBlogs, setLocalBlogs] = useState(blogs);
   const [localGallery, setLocalGallery] = useState(gallery);
+  const [localPositions, setLocalPositions] = useState(positions);
 
   useEffect(() => {
     if (sessionStorage.getItem("era_dash_auth") === "1") setAuthed(true);
@@ -81,6 +82,7 @@ const Dashboard = () => {
             <TabsTrigger value="gallery" className="gap-2"><Image size={16} /> Gallery</TabsTrigger>
             <TabsTrigger value="blog" className="gap-2"><FileText size={16} /> Blog Posts</TabsTrigger>
             <TabsTrigger value="trainings" className="gap-2"><GraduationCap size={16} /> Trainings</TabsTrigger>
+            <TabsTrigger value="positions" className="gap-2"><Briefcase size={16} /> Open Positions</TabsTrigger>
           </TabsList>
 
           {/* Gallery */}
@@ -110,7 +112,17 @@ const Dashboard = () => {
               <h3 className="font-display text-lg mb-4">New Blog Post</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div><Label>Title</Label><Input placeholder="Post title" /></div>
-                <div><Label>Category</Label><Input placeholder="e.g. Education" /></div>
+                <div><Label>Category</Label>
+                  <Select>
+                    <SelectTrigger><SelectValue placeholder="Select category" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Career">Career</SelectItem>
+                      <SelectItem value="Skills">Skills</SelectItem>
+                      <SelectItem value="Engineering">Engineering</SelectItem>
+                      <SelectItem value="News">News</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
                 <div><Label>Author</Label><Input placeholder="Author name" /></div>
                 <div><Label>Cover Image URL</Label><Input placeholder="/placeholder.svg" /></div>
               </div>
@@ -175,6 +187,98 @@ const Dashboard = () => {
                   <Button variant="ghost" size="icon" onClick={() => setLocalTrainings(ts => ts.filter(x => x.id !== t.id))}>
                     <Trash2 size={16} />
                   </Button>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+
+          {/* Positions */}
+          <TabsContent value="positions">
+            <div className="rounded-2xl border border-border p-6 mb-6">
+              <h3 className="font-display text-lg mb-4">New Position</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div><Label>Position Title</Label><Input placeholder="Civil Engineer – Site Supervision" /></div>
+                <div>
+                  <Label>Department</Label>
+                  <Select>
+                    <SelectTrigger><SelectValue placeholder="Select department" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Civil Engineering">Civil Engineering</SelectItem>
+                      <SelectItem value="Mechanical Engineering">Mechanical Engineering</SelectItem>
+                      <SelectItem value="Electrical Engineering">Electrical Engineering</SelectItem>
+                      <SelectItem value="Building Project Management">Building Project Management</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Employment Type</Label>
+                  <Select>
+                    <SelectTrigger><SelectValue placeholder="Select type" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Full-time">Full-time</SelectItem>
+                      <SelectItem value="Part-time">Part-time</SelectItem>
+                      <SelectItem value="Contract">Contract</SelectItem>
+                      <SelectItem value="Internship">Internship</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div><Label>Location</Label><Input placeholder="Lagos, Nigeria" defaultValue="Lagos, Nigeria" /></div>
+                <div>
+                  <Label>Work Mode</Label>
+                  <Select>
+                    <SelectTrigger><SelectValue placeholder="Select mode" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="On-site">On-site</SelectItem>
+                      <SelectItem value="Hybrid">Hybrid</SelectItem>
+                      <SelectItem value="Remote">Remote</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div>
+                  <Label>Experience Level</Label>
+                  <Select>
+                    <SelectTrigger><SelectValue placeholder="Select level" /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="Entry-level / Graduate">Entry-level / Graduate</SelectItem>
+                      <SelectItem value="Junior / 1–3 years">Junior / 1–3 years</SelectItem>
+                      <SelectItem value="Mid-level / 3–5 years">Mid-level / 3–5 years</SelectItem>
+                      <SelectItem value="Senior / 5+ years">Senior / 5+ years</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div><Label>Salary</Label><Input placeholder="Competitive" /></div>
+                <div><Label>Closing Date</Label><Input type="date" /></div>
+              </div>
+              <div className="mb-4"><Label>Role Summary</Label><Textarea placeholder="Brief summary shown on the card..." rows={3} /></div>
+              <div className="flex items-center gap-2 mb-4">
+                <Switch id="pos-published" />
+                <Label htmlFor="pos-published">Publish Position</Label>
+              </div>
+              <Button className="rounded-full">Save Position</Button>
+            </div>
+
+            {/* Positions list */}
+            <div className="space-y-3">
+              {localPositions.map((p) => (
+                <div key={p.id} className="flex items-center justify-between p-4 rounded-xl bg-secondary">
+                  <div>
+                    <p className="font-medium text-foreground">{p.title}</p>
+                    <p className="text-xs text-muted-foreground">
+                      {p.department} · {p.published ? "✅ Live" : "⏸ Draft"}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setLocalPositions(ps => ps.map(x => x.id === p.id ? { ...x, published: !x.published } : x))}
+                    >
+                      {p.published ? "Unpublish" : "Publish"}
+                    </Button>
+                    <Button variant="ghost" size="icon" onClick={() => setLocalPositions(ps => ps.filter(x => x.id !== p.id))}>
+                      <Trash2 size={16} />
+                    </Button>
+                  </div>
                 </div>
               ))}
             </div>

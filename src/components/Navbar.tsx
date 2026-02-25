@@ -9,9 +9,8 @@ import eraLogo from "@/assets/era-logo.png";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
-  { label: "Trainings", to: "/trainings" },
   { label: "Blog", to: "/blog" },
-  { label: "Gallery", to: "/gallery" },
+  { label: "Careers", to: "/careers" },
   { label: "Contact", to: "/contact" },
 ];
 
