@@ -28,7 +28,7 @@ const Hero = () => {
               Great futures are built with proper guidance
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg mb-8 font-body">
-              An organisation dedicated to graduate training and employment opportunities for civil and mechanical engineers in the building environment.
+              An organisation dedicated to graduate training and employment opportunities — bridging the gap between university and industry, one engineer at a time.
             </p>
             <div className="flex flex-wrap gap-3 mb-10">
               <Button asChild size="lg" className="rounded-full px-8">
