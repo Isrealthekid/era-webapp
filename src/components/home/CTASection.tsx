@@ -52,7 +52,7 @@ const CTASection = () => {
               asChild
               variant="outline"
               size="lg"
-              className="group rounded-full border-era-gray-600 text-white hover:bg-era-gray-800 hover:border-era-gray-400 font-semibold text-base px-8 transition-all duration-300 hover:scale-105"
+              className="group rounded-full border-era-gray-600 text-primary hover:text-white hover:bg-era-gray-800 hover:border-era-gray-400 font-semibold text-base px-8 transition-all duration-300 hover:scale-105"
             >
               <a href="/trainings">Explore Trainings</a>
             </Button>

@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <img src={eraLogo} alt="ERA Academy" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img src={eraLogo} alt="ERA Academy" className="h-12 w-auto mb-4" />
             <p className="text-sm leading-relaxed max-w-xs">
               Empowering civil & mechanical engineering graduates for the building environment.
             </p>
