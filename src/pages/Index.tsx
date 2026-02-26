@@ -5,6 +5,7 @@ import BentoStats from "@/components/home/BentoStats";
 import ProgramsBento from "@/components/home/ProgramsBento";
 import TrainingsStrip from "@/components/home/TrainingsStrip";
 import Testimonials from "@/components/home/Testimonials";
+import CTASection from "@/components/home/CTASection";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <ProgramsBento />
       <TrainingsStrip />
       <Testimonials />
+      <CTASection />
     </Layout>
   );
 };
