@@ -57,39 +57,39 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden relative">
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden">
               <img src={heroBg} alt="ERA Academy engineers on site" className="w-full h-full object-cover" />
-
-              {/* Floating stat card 1 */}
-              <motion.div
-                className="absolute top-6 -left-4 glass rounded-2xl px-4 py-3 flex items-center gap-3"
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                  <GraduationCap size={20} className="text-primary" />
-                </div>
-                <div>
-                  <p className="font-display text-xl text-foreground leading-none">500+</p>
-                  <p className="text-xs text-muted-foreground">Graduates</p>
-                </div>
-              </motion.div>
-
-              {/* Floating stat card 2 */}
-              <motion.div
-                className="absolute bottom-8 -right-4 glass rounded-2xl px-4 py-3 flex items-center gap-3"
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 4, delay: 2, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-                  <Briefcase size={20} className="text-primary" />
-                </div>
-                <div>
-                  <p className="font-display text-xl text-foreground leading-none">95%</p>
-                  <p className="text-xs text-muted-foreground">Employed</p>
-                </div>
-              </motion.div>
             </div>
+
+            {/* Floating stat card 1 — outside the clipped div */}
+            <motion.div
+              className="absolute top-6 -left-4 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                <GraduationCap size={20} className="text-primary" />
+              </div>
+              <div>
+                <p className="font-display text-xl text-foreground leading-none">500+</p>
+                <p className="text-xs text-muted-foreground">Graduates</p>
+              </div>
+            </motion.div>
+
+            {/* Floating stat card 2 — outside the clipped div */}
+            <motion.div
+              className="absolute bottom-8 -right-4 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 4, delay: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                <Briefcase size={20} className="text-primary" />
+              </div>
+              <div>
+                <p className="font-display text-xl text-foreground leading-none">95%</p>
+                <p className="text-xs text-muted-foreground">Employed</p>
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </div>
