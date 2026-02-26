@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Typewriter from "@/components/Typewriter";
 
 interface SectionHeadingProps {
   tag: string;
@@ -19,7 +20,7 @@ const SectionHeading = ({ tag, title, subtitle, className, align = "center" }: S
       </h2>
       {subtitle && (
         <p className="mt-4 max-w-2xl text-base md:text-lg text-muted-foreground font-body mx-auto">
-          {subtitle}
+          <Typewriter text={subtitle} speed={16} />
         </p>
       )}
     </div>
