@@ -49,7 +49,7 @@ const Footer = () => {
                   <li key={link.label}>
                     <Link
                       to={link.to}
-                      className="text-sm hover:text-white transition-colors"
+                      className="text-sm hover:text-white transition-all duration-300 hover:translate-x-1 inline-block"
                     >
                       {link.label}
                     </Link>
@@ -64,13 +64,13 @@ const Footer = () => {
         <div className="border-t border-era-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs">&copy; {new Date().getFullYear()} ERA Academy.</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-white transition-colors" aria-label="Instagram">
+            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Instagram">
               <Instagram size={18} />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="Facebook">
+            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Facebook">
               <Facebook size={18} />
             </a>
-            <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">
+            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="LinkedIn">
               <Linkedin size={18} />
             </a>
           </div>

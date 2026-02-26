@@ -42,17 +42,17 @@ const CTASection = () => {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-lime text-era-gray-900 hover:bg-lime/90 font-semibold text-base px-8"
+              className="group rounded-full bg-lime text-era-gray-900 hover:bg-lime/90 hover:shadow-[0_0_24px_hsl(var(--lime)/0.4)] font-semibold text-base px-8 transition-all duration-300 hover:scale-105"
             >
               <a href="mailto:info@era.com.ng?subject=Join%20Program">
-                Join Next Cohort <ArrowRight className="ml-2 h-4 w-4" />
+                Join Next Cohort <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
             </Button>
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="rounded-full border-era-gray-600 text-white hover:bg-era-gray-800 font-semibold text-base px-8"
+              className="group rounded-full border-era-gray-600 text-white hover:bg-era-gray-800 hover:border-era-gray-400 font-semibold text-base px-8 transition-all duration-300 hover:scale-105"
             >
               <a href="/trainings">Explore Trainings</a>
             </Button>
