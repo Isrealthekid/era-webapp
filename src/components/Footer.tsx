@@ -64,13 +64,13 @@ const Footer = () => {
         <div className="border-t border-era-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs">&copy; {new Date().getFullYear()} ERA Academy.</p>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Instagram">
+            <a href="https://www.instagram.com/er_academy_ng/" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Instagram">
               <Instagram size={18} />
             </a>
-            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Facebook">
+            <a href="https://www.facebook.com/engineeringresourcesacademy" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="Facebook">
               <Facebook size={18} />
             </a>
-            <a href="#" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/engineering-resource-academy/posts/" className="hover:text-white hover:scale-125 transition-all duration-300" aria-label="LinkedIn">
               <Linkedin size={18} />
             </a>
           </div>

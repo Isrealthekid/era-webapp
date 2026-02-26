@@ -1,14 +1,38 @@
 [
-  { "id": 1, "name": "Calebella Integritas Projects Ltd", "logo": "/placeholder.svg" },
-  { "id": 2, "name": "Black Diamond Engineering Limited", "logo": "/placeholder.svg" },
-  { "id": 3, "name": "El Fad", "logo": "/placeholder.svg" },
-  { "id": 4, "name": "MBS", "logo": "/placeholder.svg" },
-  { "id": 5, "name": "MW", "logo": "/placeholder.svg" },
-  { "id": 6, "name": "Julius Berger Nigeria", "logo": "/placeholder.svg" },
-  { "id": 7, "name": "Cappa & D'Alberto", "logo": "/placeholder.svg" },
-  { "id": 8, "name": "Reynolds Construction Company", "logo": "/placeholder.svg" },
-  { "id": 9, "name": "CCECC Nigeria", "logo": "/placeholder.svg" },
-  { "id": 10, "name": "HFP Engineering", "logo": "/placeholder.svg" },
-  { "id": 11, "name": "Craneburg Construction", "logo": "/placeholder.svg" },
-  { "id": 12, "name": "Dutum Construction", "logo": "/placeholder.svg" }
+  {
+    "id": 1,
+    "name": "Calebella Integritas Projects Ltd",
+    "logo": "calebella.png"
+  },
+  {
+    "id": 2,
+    "name": "Black Diamond Engineering Limited",
+    "logo": "blackdiamond.jpg"
+  },
+  {
+    "id": 3,
+    "name": "El Fad",
+    "logo": "elfad.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Master Builders Solutions",
+    "logo": "mbs.png"
+  },
+  {
+    "id": 5,
+    "name": "Monumental Works Limited",
+    "logo": "mw.png"
+  },
+  {
+    "id": 6,
+    "name": "COREN",
+    "logo": "coren.png"
+  },
+  {
+    "id": 7,
+    "name": "NSE Ibeju-Lekki Branch",
+    "logo": "nseibejulekkki.jpg"
+  }
+
 ]
