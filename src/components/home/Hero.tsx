@@ -11,7 +11,7 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="py-10 md:py-16 lg:py-24">
+    <section className="py-8 md:py-10 lg:py-18">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left column */}
@@ -57,14 +57,14 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden">
+            <div className="h-[75vh] w-[35vw] aspect-[3/4] rounded-3xl overflow-hidden">
               <img src={heroBg} alt="ERA Academy engineers on site" className="w-full h-full object-cover" />
             </div>
 
             {/* Floating stat card 1 — outside the clipped div */}
             <motion.div
-              className="absolute top-6 -left-4 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
-              animate={{ y: [0, -12, 0] }}
+              className="absolute top-6 -left-12 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              animate={{ y: [0, -20, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
@@ -78,7 +78,7 @@ const Hero = () => {
 
             {/* Floating stat card 2 — outside the clipped div */}
             <motion.div
-              className="absolute bottom-8 -right-4 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              className="absolute bottom-8 -right-10 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
               animate={{ y: [0, -12, 0] }}
               transition={{ duration: 4, delay: 2, repeat: Infinity, ease: "easeInOut" }}
             >

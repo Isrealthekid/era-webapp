@@ -37,7 +37,7 @@ const Typewriter = ({ text, speed = 18, className }: TypewriterProps) => {
         <motion.span
           className="inline-block w-[2px] h-[1em] bg-primary ml-0.5 align-text-bottom"
           animate={{ opacity: [1, 0] }}
-          transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
         />
       )}
     </span>

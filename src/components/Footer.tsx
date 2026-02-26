@@ -29,7 +29,7 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="bg-era-gray-900 text-era-gray-400 pt-16 pb-8">
+    <footer className="bg-era-gray-900 text-era-gray-400 pt-6 pb-4">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand column */}
