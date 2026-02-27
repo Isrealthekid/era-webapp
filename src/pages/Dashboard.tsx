@@ -14,7 +14,7 @@ import blogs from "@/data/blogs.json";
 import gallery from "@/data/gallery.json";
 import positions from "@/data/positions.json";
 
-const CORRECT_PIN = "123456";
+const CORRECT_PIN = import.meta.env.VITE_DASHBOARD_PIN;
 
 const Dashboard = () => {
   const [authed, setAuthed] = useState(false);
