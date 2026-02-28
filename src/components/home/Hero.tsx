@@ -1,7 +1,9 @@
+"use client";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Users, Briefcase, Building2, GraduationCap } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
   { icon: Users, value: "500+", label: "Engineers Trained" },
@@ -75,11 +77,13 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="lg:h-[75vh] lg:w-[35vw] md:h-[40vh] md:w-[30vw] sm:h-[30vh] sm:w-[25vw] aspect-[3/4] rounded-3xl overflow-hidden">
-              <img
-                src={heroBg}
+            <div className="lg:h-[75vh] lg:w-[35vw] md:h-[40vh] md:w-[30vw] sm:h-[30vh] sm:w-[25vw] aspect-[3/4] rounded-3xl overflow-hidden relative">
+              <Image
+                src="/hero-bg.jpg"
                 alt="ERA Academy engineers on site"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
 

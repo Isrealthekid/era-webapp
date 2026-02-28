@@ -1,17 +1,13 @@
+import Image from "next/image";
 import { Quote } from "lucide-react";
 import testimonials from "@/data/testimonials.json";
 import SectionHeading from "@/components/SectionHeading";
 
-import testimonialDefault from "@/assets/testimonial-default.png";
-import testimonialTofunmi from "@/assets/testimonial-tofunmi.jpeg";
-import testimonialHamzah from "@/assets/testimonial-hamzah.jpg";
-import testimonialWright from "@/assets/testimonial-wright.jpg";
-
 const avatarMap: Record<string, string> = {
-  "testimonial-default": testimonialDefault,
-  "testimonial-tofunmi": testimonialTofunmi,
-  "testimonial-hamzah": testimonialHamzah,
-  "testimonial-wright": testimonialWright,
+  "testimonial-default": "/testimonial-default.png",
+  "testimonial-tofunmi": "/testimonial-tofunmi.jpeg",
+  "testimonial-hamzah": "/testimonial-hamzah.jpg",
+  "testimonial-wright": "/testimonial-wright.jpg",
 };
 
 const row1 = testimonials.slice(0, Math.ceil(testimonials.length / 2));
@@ -22,10 +18,12 @@ const TestimonialCard = ({ t }: { t: (typeof testimonials)[0] }) => (
     <Quote size={20} className="text-primary/30 mb-2" />
     <p className="text-foreground text-sm leading-relaxed mb-4 line-clamp-4">{t.quote}</p>
     <div className="flex items-center gap-3">
-      <img
-        src={avatarMap[t.avatar] || testimonialDefault}
+      <Image
+        src={avatarMap[t.avatar] || "/testimonial-default.png"}
         alt={t.name}
-        className="w-9 h-9 rounded-full bg-secondary object-cover"
+        width={36}
+        height={36}
+        className="rounded-full bg-secondary object-cover"
       />
       <div>
         <p className="font-medium text-sm text-foreground">{t.name}</p>

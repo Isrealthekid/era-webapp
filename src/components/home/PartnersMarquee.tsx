@@ -1,8 +1,11 @@
+"use client";
+
+import Image from "next/image";
 import partners from "@/data/partners.json";
 
 const getLogoUrl = (logo: string) => {
   if (logo.startsWith('/')) return logo;
-  return new URL(`../../assets/partners/${logo}`, import.meta.url).href;
+  return `/partners/${logo}`;
 };
 
 const PartnersMarquee = () => {
@@ -35,7 +38,7 @@ const PartnersMarquee = () => {
           <div className="marquee-inner flex gap-16 items-center animate-marquee w-max">
             {doubled.map((partner, i) => (
               <div key={`gs-${i}`} className="flex items-center gap-3 shrink-0 grayscale opacity-40">
-                <img src={getLogoUrl(partner.logo)} alt={partner.name} className="h-12 w-12 object-contain" />
+                <Image src={getLogoUrl(partner.logo)} alt={partner.name} width={48} height={48} className="object-contain" />
                 <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">{partner.name}</span>
               </div>
             ))}
@@ -47,7 +50,7 @@ const PartnersMarquee = () => {
           <div className="marquee-inner flex gap-16 items-center animate-marquee w-max">
             {doubled.map((partner, i) => (
               <div key={`cl-${i}`} className="flex items-center gap-3 shrink-0">
-                <img src={getLogoUrl(partner.logo)} alt={partner.name} className="h-12 w-12 object-contain" />
+                <Image src={getLogoUrl(partner.logo)} alt={partner.name} width={48} height={48} className="object-contain" />
                 <span className="text-sm font-medium text-foreground whitespace-nowrap">{partner.name}</span>
               </div>
             ))}

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
-import eraLogo from "@/assets/era-logo.png";
 
 const footerLinks = {
   Programs: [
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <img src={eraLogo} alt="ERA Academy" className="h-12 w-auto mb-4" />
+            <Image src="/era-logo.png" alt="ERA Academy" width={120} height={48} className="h-12 w-auto mb-4" />
             <p className="text-sm leading-relaxed max-w-xs">
               Empowering civil & mechanical engineering graduates for the building environment.
             </p>
@@ -48,7 +48,7 @@ const Footer = () => {
                 {links.map((link) => (
                   <li key={link.label}>
                     <Link
-                      to={link.to}
+                      href={link.to}
                       className="text-sm hover:text-white transition-all duration-300 hover:translate-x-1 inline-block"
                     >
                       {link.label}
