@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import GalleryContent from "@/components/gallery/GalleryContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function GalleryPage() {
-  return (
-    <Layout>
-      <GalleryContent />
-    </Layout>
-  );
+  return <GalleryContent />;
 }

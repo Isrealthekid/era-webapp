@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import CareerDetailContent from "@/components/careers/CareerDetailContent";
 import positions from "@/data/positions.json";
 import { notFound } from "next/navigation";
@@ -35,9 +34,5 @@ export default async function CareerDetailPage({ params }: Props) {
     notFound();
   }
 
-  return (
-    <Layout>
-      <CareerDetailContent position={position} />
-    </Layout>
-  );
+  return <CareerDetailContent position={position} />;
 }

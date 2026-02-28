@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import ContactContent from "@/components/contact/ContactContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  return (
-    <Layout>
-      <ContactContent />
-    </Layout>
-  );
+  return <ContactContent />;
 }

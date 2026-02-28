@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import BlogPostContent from "@/components/blog/BlogPostContent";
 import blogs from "@/data/blogs.json";
 import { notFound } from "next/navigation";
@@ -35,9 +34,5 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  return (
-    <Layout>
-      <BlogPostContent post={post} />
-    </Layout>
-  );
+  return <BlogPostContent post={post} />;
 }

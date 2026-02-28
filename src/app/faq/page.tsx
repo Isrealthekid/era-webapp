@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import FAQContent from "@/components/faq/FAQContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function FAQPage() {
-  return (
-    <Layout>
-      <FAQContent />
-    </Layout>
-  );
+  return <FAQContent />;
 }

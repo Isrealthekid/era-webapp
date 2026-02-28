@@ -55,6 +55,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               href={link.to}
+              prefetch={true}
               className={cn(
                 "px-3 py-1.5 text-sm font-medium rounded-full transition-colors",
                 pathname === link.to

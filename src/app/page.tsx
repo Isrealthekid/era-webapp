@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import Hero from "@/components/home/Hero";
 import PartnersMarquee from "@/components/home/PartnersMarquee";
 import BentoStats from "@/components/home/BentoStats";
@@ -9,7 +8,7 @@ import CTASection from "@/components/home/CTASection";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <Hero />
       <PartnersMarquee />
       <BentoStats />
@@ -17,6 +16,6 @@ export default function Home() {
       <TrainingsStrip />
       <Testimonials />
       <CTASection />
-    </Layout>
+    </>
   );
 }

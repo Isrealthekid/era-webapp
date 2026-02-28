@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import BlogContent from "@/components/blog/BlogContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  return (
-    <Layout>
-      <BlogContent />
-    </Layout>
-  );
+  return <BlogContent />;
 }

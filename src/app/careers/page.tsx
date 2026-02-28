@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import CareersContent from "@/components/careers/CareersContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function CareersPage() {
-  return (
-    <Layout>
-      <CareersContent />
-    </Layout>
-  );
+  return <CareersContent />;
 }

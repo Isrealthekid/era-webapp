@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import TrainingsContent from "@/components/trainings/TrainingsContent";
 
 export const metadata = {
@@ -7,9 +6,5 @@ export const metadata = {
 };
 
 export default function TrainingsPage() {
-  return (
-    <Layout>
-      <TrainingsContent />
-    </Layout>
-  );
+  return <TrainingsContent />;
 }

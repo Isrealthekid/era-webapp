@@ -1,5 +1,3 @@
-import Layout from "@/components/Layout";
-import SectionHeading from "@/components/SectionHeading";
 import AboutContent from "@/components/about/AboutContent";
 
 export const metadata = {
@@ -8,9 +6,5 @@ export const metadata = {
 };
 
 export default function AboutPage() {
-  return (
-    <Layout>
-      <AboutContent />
-    </Layout>
-  );
+  return <AboutContent />;
 }

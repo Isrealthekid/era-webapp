@@ -1,4 +1,3 @@
-import Layout from "@/components/Layout";
 import TrainingDetailContent from "@/components/trainings/TrainingDetailContent";
 import trainings from "@/data/trainings.json";
 import { notFound } from "next/navigation";
@@ -35,9 +34,5 @@ export default async function TrainingDetailPage({ params }: Props) {
     notFound();
   }
 
-  return (
-    <Layout>
-      <TrainingDetailContent training={training} />
-    </Layout>
-  );
+  return <TrainingDetailContent training={training} />;
 }
