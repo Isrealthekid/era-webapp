@@ -1,10 +1,13 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import eraLogo from "@/assets/era-logo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -17,7 +20,7 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -27,7 +30,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setMobileOpen(false);
-  }, [location.pathname]);
+  }, [pathname]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-2 px-4">
@@ -42,8 +45,8 @@ const Navbar = () => {
         style={{ width: scrolled ? "65%" : "80%", minWidth: 320, maxWidth: 1200 }}
         transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
       >
-        <Link to="/" className="shrink-0">
-          <img src={eraLogo} alt="ERA Academy" className="h-10 w-auto" />
+        <Link href="/" className="shrink-0">
+          <Image src="/era-logo.png" alt="ERA Academy" width={100} height={40} className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}
@@ -51,10 +54,11 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <Link
               key={link.to}
-              to={link.to}
+              href={link.to}
+              prefetch={true}
               className={cn(
                 "px-3 py-1.5 text-sm font-medium rounded-full transition-colors",
-                location.pathname === link.to
+                pathname === link.to
                   ? "text-primary bg-accent"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary"
               )}
@@ -91,10 +95,10 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <Link
                   key={link.to}
-                  to={link.to}
+                  href={link.to}
                   className={cn(
                     "px-4 py-3 rounded-xl text-sm font-medium transition-colors",
-                    location.pathname === link.to
+                    pathname === link.to
                       ? "text-primary bg-accent"
                       : "text-muted-foreground hover:text-foreground hover:bg-secondary"
                   )}

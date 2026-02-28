@@ -1,5 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
@@ -54,7 +57,7 @@ const CTASection = () => {
               size="lg"
               className="group rounded-full border-era-gray-600 text-primary hover:text-white hover:bg-era-gray-800 hover:border-era-gray-400 font-semibold text-base px-8 transition-all duration-300 hover:scale-105"
             >
-              <a href="/trainings">Explore Trainings</a>
+              <Link href="/trainings">Explore Trainings</Link>
             </Button>
           </div>
         </motion.div>

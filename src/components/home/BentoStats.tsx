@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Users, TrendingUp, Building2, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";

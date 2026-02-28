@@ -1,26 +1,26 @@
+"use client";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
-import technicalImg from "@/assets/technical-training.jpg";
-import softSkillsImg from "@/assets/soft-skills.jpg";
-import internshipImg from "@/assets/internship.jpg";
 
 const programs = [
   {
     title: "Technical Training",
     description: "Hands-on training in structural detailing, setting out, concrete volume calculation, formwork design, and site supervision for civil and mechanical engineers.",
-    image: technicalImg,
+    image: "/technical-training.jpg",
     large: true,
   },
   {
     title: "Soft Skills Development",
     description: "Communication, project management, teamwork, and leadership skills essential for the building environment.",
-    image: softSkillsImg,
+    image: "/soft-skills.jpg",
     large: false,
   },
   {
     title: "Internship Placement",
     description: "6-month placements with our 20+ partner construction and engineering firms for real-world site experience.",
-    image: internshipImg,
+    image: "/internship.jpg",
     large: false,
   },
 ];
@@ -45,7 +45,7 @@ const ProgramsBento = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.5 }}
             >
-              <img src={prog.image} alt={prog.title} className="w-full h-full object-cover absolute inset-0" />
+              <Image src={prog.image} alt={prog.title} fill className="object-cover" />
               <div className="relative z-10 bg-gradient-to-t from-era-gray-900/90 via-era-gray-900/40 to-transparent p-8 flex flex-col justify-end min-h-[240px] h-full">
                 <h3 className="font-display text-2xl text-white mb-2">{prog.title}</h3>
                 <p className="text-white/80 text-sm">{prog.description}</p>

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import trainings from "@/data/trainings.json";
 import SectionHeading from "@/components/SectionHeading";
@@ -26,11 +27,11 @@ const TrainingsStrip = () => {
           {trainings.filter(t => t.published).map((t) => (
             <Link
               key={t.id}
-              to={`/trainings/${t.slug}`}
+              href={`/trainings/${t.slug}`}
               className="w-72 shrink-0 rounded-2xl bg-card border border-border overflow-hidden hover-lift group"
             >
               <div className="aspect-[4/3] bg-secondary relative">
-                <img src={t.flyer} alt={t.title} className="w-full h-full object-cover" />
+                <Image src={t.flyer} alt={t.title} fill className="object-cover" />
                 <Badge className={cn("absolute top-3 left-3 border text-xs", modeBadgeColors[t.mode] || "")}>
                   {t.mode}
                 </Badge>
@@ -48,7 +49,7 @@ const TrainingsStrip = () => {
             </Link>
           ))}
           <Link
-            to="/trainings"
+            href="/trainings"
             className="w-72 shrink-0 rounded-2xl border-2 border-dashed border-border flex flex-col items-center justify-center gap-2 text-muted-foreground hover:text-primary hover:border-primary transition-colors"
           >
             <ArrowRight size={24} />

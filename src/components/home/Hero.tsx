@@ -1,7 +1,9 @@
+"use client";
+
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Users, Briefcase, Building2, GraduationCap } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
   { icon: Users, value: "500+", label: "Engineers Trained" },
@@ -12,7 +14,7 @@ const stats = [
 const Hero = () => {
   return (
     <section className="py-8 md:py-10 lg:py-18 overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left column */}
           <motion.div
@@ -75,11 +77,13 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
           >
-            <div className="lg:h-[75vh] lg:w-[35vw] md:h-[40vh] md:w-[30vw] sm:h-[30vh] sm:w-[25vw] aspect-[3/4] rounded-3xl overflow-hidden">
-              <img
-                src={heroBg}
+            <div className="lg:h-[75vh] lg:w-[35vw] md:h-[40vh] md:w-[30vw] sm:h-[30vh] sm:w-[25vw] aspect-[3/4] rounded-3xl overflow-hidden relative">
+              <Image
+                src="/hero-bg.jpg"
                 alt="ERA Academy engineers on site"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
 
@@ -131,7 +135,7 @@ const Hero = () => {
 
             {/* Floating stat card 2 */}
             <motion.div
-              className="absolute bottom-8 right-2 md:right-2 lg:-right-10 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              className="absolute bottom-8 right-2 md:right-2 lg:-right-2 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
               animate={{ y: [0, -12, 0] }}
               transition={{
                 duration: 4,
