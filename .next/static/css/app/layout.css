@@ -3674,6 +3674,11 @@ h1, h2, h3, h4, h5, h6{
     padding-bottom: 7rem;
   }
 
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -3741,12 +3746,20 @@ h1, h2, h3, h4, h5, h6{
     left: -3rem;
   }
 
-  .lg\:-right-10{
-    right: -2.5rem;
+  .lg\:-right-6{
+    right: -1.5rem;
   }
 
   .lg\:top-24{
     top: 6rem;
+  }
+
+  .lg\:-right-2{
+    right: -0.5rem;
+  }
+
+  .lg\:-right-10{
+    right: -2.5rem;
   }
 
   .lg\:col-span-4{
@@ -3788,6 +3801,11 @@ h1, h2, h3, h4, h5, h6{
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:text-5xl{

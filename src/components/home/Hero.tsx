@@ -14,7 +14,7 @@ const stats = [
 const Hero = () => {
   return (
     <section className="py-8 md:py-10 lg:py-18 overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left column */}
           <motion.div
@@ -135,7 +135,7 @@ const Hero = () => {
 
             {/* Floating stat card 2 */}
             <motion.div
-              className="absolute bottom-8 right-2 md:right-2 lg:-right-10 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
+              className="absolute bottom-8 right-2 md:right-2 lg:-right-2 glass rounded-2xl px-4 py-3 flex items-center gap-3 shadow-xl shadow-black/20 z-10"
               animate={{ y: [0, -12, 0] }}
               transition={{
                 duration: 4,
